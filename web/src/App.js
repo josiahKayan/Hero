@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes'
+// Componente - Um função que retorna um conteúdo. Bloco isolador de HTML, Css e Js que não interfere no restante da aplicação.
+// Propriedade - É um atributo, tipo STYLE="display:none". Informações que um componente pai passa para o componente filho.
+// Estado - Informações mantidas pelo componente ( IMUTABILIDADE )
+
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <Routes></Routes>
+    
   );
 }
 
